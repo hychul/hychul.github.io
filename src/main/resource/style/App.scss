@@ -1,0 +1,34 @@
+$font: white;
+$line: #454440;
+
+.Panel {
+  display: flex;
+  justify-content: center; // horizontal
+  align-items: flex-start; // vertical
+  width: calc(100% - 33px * 2);
+  max-width: calc(1280px - 33px * 2);
+  margin: 0px;
+  border: solid 1px $line;
+  padding: 14px 33px;
+  background-color: "#222222";
+  color: $font;
+  &.focus {
+    background-color: #181818;
+  }
+}
+.Panel:nth-child(even) {
+  border: solid 0px $line;
+  border-left: solid 1px $line;
+  border-right: solid 1px $line;
+}
+.Panel:first-child {
+  border-top: solid 1px $line;
+  border-radius: 0.5em 0.5em 0em 0em;
+}
+.Panel:last-child {
+  border-bottom: solid 1px $line;
+  border-radius: 0em 0em 0.5em 0.5em;
+}
+.Panel:only-child {
+  border-radius: 0.5em;
+}
