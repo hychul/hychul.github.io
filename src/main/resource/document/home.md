@@ -21,6 +21,6 @@ Game Web Server Engineer
 
 ### LINE Plus
 
-Ad Platform Server Engineer
+Ad Platform Backend Engineer
 
 <hr style="border: solid 1px #6b7885;">
