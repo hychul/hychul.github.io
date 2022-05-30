@@ -15,7 +15,8 @@ function PostContainer(props) {
   useEffect(() => {
     const postList = props.state.postMap.get("menu").get("all") ?? [];
     postList.forEach((element) => {
-      if (element.postId === postId) {
+      // eslint-disable-next-line
+      if (element.postId == postId) {
         setMeta({
           title: element.title,
           date: element.date,
@@ -23,7 +24,7 @@ function PostContainer(props) {
         return;
       }
     });
-  }, [props.state.map, menu, postId]);
+  }, [props.state.postMap, menu, postId]);
 
   useEffect(() => {
     setSource("");
