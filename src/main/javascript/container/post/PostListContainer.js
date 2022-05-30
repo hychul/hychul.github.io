@@ -6,6 +6,7 @@ import { loadPosts } from "main/javascript/redux/reducer/post";
 function PostListContainer(props) {
   props.loadPosts();
 
+  const menu = props.menu;
   const page = props.page ?? 1;
   const tag = props.tag ?? "all";
   const postList = props.state.map.get(tag) ?? [];
@@ -14,6 +15,7 @@ function PostListContainer(props) {
 }
 
 const mapStateToProps = (state) => ({
+  menu: state.menu.menu,
   state: state.posts,
 });
 

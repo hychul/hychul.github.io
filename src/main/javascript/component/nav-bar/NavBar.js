@@ -1,8 +1,15 @@
+import { UPDATE_MENU } from "main/javascript/redux/action";
 import React from "react";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-// import dduggy from "main/resource/image/dduggy.jpg";
 
-function NavBar() {
+function NavBar(props) {
+  var menu = props.menu.menu;
+  var home = props.home;
+  var thoughs = props.thoughts;
+  var dev = props.dev;
+  var tags = props.tags;
+
   return (
     <div
       style={{
@@ -38,24 +45,10 @@ function NavBar() {
           }}
           to={{ pathname: `/` }}
           replace
+          onClick={() => {
+            home();
+          }}
         >
-          {/* <img
-           style={{
-             width: "3rem",
-             height: "3rem",
-           }}
-           onMouseOver={() => {
-             console.log("over");
-           }}
-           onMouseOut={() => {
-             console.log("out");
-           }}
-           onClick={() => {
-             console.log("click");
-           }}
-           src={dduggy}
-           alt="home"
-         /> */}
           <div
             style={{
               // center
@@ -89,23 +82,23 @@ function NavBar() {
               justifyContent: "center",
               alignItems: "center",
               margin: "0rem 0.25rem",
-              width: "3rem",
-              height: "3rem",
-              borderRadius: "0.2em",
               textDecoration: "none",
-              backgroundColor: "#a4dbe8",
               textAlign: "center",
               verticalAlign: "middle",
               fontWeight: "bold",
-              color: "#2e1a47",
-              fontSize: "12px",
+              // eslint-disable-next-line
+              color: menu == "thoughts" ? "#a4dbe8" : "#a3b1c0",
+              fontSize: "16px",
+            }}
+            onClick={() => {
+              thoughs();
             }}
           >
-            POST
+            THOUGHTS
           </Link>
-          {/* <Link
+          <Link
             to={{
-              pathname: `/wiki`,
+              pathname: `/posts`,
             }}
             style={{
               gridRow: "2",
@@ -113,20 +106,21 @@ function NavBar() {
               justifyContent: "center",
               alignItems: "center",
               margin: "0rem 0.25rem",
-              width: "3rem",
               height: "3rem",
-              borderRadius: "0.2em",
               textDecoration: "none",
-              backgroundColor: "#a4dbe8",
               textAlign: "center",
               verticalAlign: "middle",
               fontWeight: "bold",
-              color: "#2e1a47",
-              fontSize: "12px",
+              // eslint-disable-next-line
+              color: menu == "dev" ? "#a4dbe8" : "#a3b1c0",
+              fontSize: "16px",
+            }}
+            onClick={() => {
+              dev();
             }}
           >
-            WIKI
-          </Link> */}
+            DEV
+          </Link>
           <Link
             to={{
               pathname: `/tags`,
@@ -137,16 +131,17 @@ function NavBar() {
               justifyContent: "center",
               alignItems: "center",
               margin: "0rem 0rem 0rem 0.25rem",
-              width: "3rem",
               height: "3rem",
-              borderRadius: "0.2em",
               textDecoration: "none",
-              backgroundColor: "#a4dbe8",
               textAlign: "center",
               verticalAlign: "middle",
               fontWeight: "bold",
-              color: "#2e1a47",
-              fontSize: "12px",
+              // eslint-disable-next-line
+              color: menu == "tags" ? "#a4dbe8" : "#a3b1c0",
+              fontSize: "16px",
+            }}
+            onClick={() => {
+              tags();
             }}
           >
             TAGS
@@ -157,4 +152,15 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+const mapStateToProps = (state) => ({
+  menu: state.menu,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  home: () => dispatch({ type: UPDATE_MENU, menu: "home" }),
+  thoughts: () => dispatch({ type: UPDATE_MENU, menu: "thoughts" }),
+  dev: () => dispatch({ type: UPDATE_MENU, menu: "dev" }),
+  tags: () => dispatch({ type: UPDATE_MENU, menu: "tags" }),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

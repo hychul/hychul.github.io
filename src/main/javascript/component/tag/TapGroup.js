@@ -15,10 +15,7 @@ const customRenderer = (tag, count, color) => {
         margin: `${count / 25}px`,
         padding: `0em 0.25em`,
         textDecoration: "none",
-        // borderRadius: "0.25em",
-        // backgroundColor: "#181818",
         fontSize: `${count / 15}em`,
-        // color: `${color}`,
         color: "#a3b1c0",
       }}
     >
