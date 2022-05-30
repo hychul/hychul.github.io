@@ -2,7 +2,7 @@ import { UPDATE_POST_LIST, UPDATE_TAG } from "main/javascript/redux/action";
 
 const initialState = {
   isLoad: false,
-  map: new Map(),
+  postMap: new Map(),
 };
 
 export const loadPosts = () => (dispatch, getState) => {
@@ -18,37 +18,51 @@ export const loadPosts = () => (dispatch, getState) => {
     .then((it) => it.text())
     .then((it) => {
       const postMap = new Map();
-      postMap.set("all", []);
-      const tagMap = new Map();
+
+      const menuToPostMap = new Map();
+      menuToPostMap.set("all", []);
+      const tagToPostMap = new Map();
+      tagToPostMap.set("all", []);
+
+      const tagToCountMap = new Map();
 
       it.split("\n")
         .filter((it) => !it.startsWith("//"))
         .map((it) => it.split(" :: "))
-        .filter((it) => it.length >= 3)
+        .filter((it) => it.length >= 4)
         .map((it) => ({
-          postId: it[0],
-          date: it[0].split("/").pop().substring(0, 10),
-          title: it[1],
+          menu: it[0],
+          postId: it[1],
+          date: it[1].split("/").pop().substring(0, 10),
+          title: it[2],
           tags: Array.from(
-            new Set(it[2]?.split(", ").filter((it) => it !== ""))
+            new Set(it[3]?.split(", ").filter((it) => it !== ""))
           ),
         }))
         .forEach((post) => {
-          post.tags.forEach((tag) => {
-            const list = postMap.get(tag) ?? [];
-            list.push(post);
-            postMap.set(tag, list);
+          const list = menuToPostMap.get(post.menu) ?? [];
+          list.push(post);
+          menuToPostMap.set(post.menu, list);
 
-            const count = tagMap.get(tag) ?? 0;
-            tagMap.set(tag, count + 1);
+          post.tags.forEach((tag) => {
+            const list = tagToPostMap.get(tag) ?? [];
+            list.push(post);
+            tagToPostMap.set(tag, list);
+
+            const count = tagToCountMap.get(tag) ?? 0;
+            tagToCountMap.set(tag, count + 1);
           });
 
-          postMap.get("all").push(post);
+          menuToPostMap.get("all").push(post);
+          tagToPostMap.get("all").push(post);
         });
+
+      postMap.set("menu", menuToPostMap);
+      postMap.set("tag", tagToPostMap);
 
       dispatch({
         type: UPDATE_TAG,
-        map: tagMap,
+        map: tagToCountMap,
       });
 
       dispatch({
@@ -63,7 +77,7 @@ function postReducer(state = initialState, action) {
     case UPDATE_POST_LIST:
       return {
         isLoad: true,
-        map: action.map,
+        postMap: action.map,
       };
     default:
       return state;

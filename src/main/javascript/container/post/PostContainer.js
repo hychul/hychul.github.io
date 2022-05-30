@@ -6,13 +6,14 @@ import { loadPosts } from "main/javascript/redux/reducer/post";
 function PostContainer(props) {
   props.loadPosts();
 
+  const menu = props.menu;
   const postId = props.postId;
 
   const [meta, setMeta] = useState({ title: "", date: "" });
   const [source, setSource] = useState();
 
   useEffect(() => {
-    const postList = props.state.map.get("all") ?? [];
+    const postList = props.state.postMap.get("menu").get("all") ?? [];
     postList.forEach((element) => {
       if (element.postId === postId) {
         setMeta({
@@ -22,28 +23,29 @@ function PostContainer(props) {
         return;
       }
     });
-  }, [props.state.map, postId]);
+  }, [props.state.map, menu, postId]);
 
   useEffect(() => {
     setSource("");
-    if (postId === undefined) {
+    if (menu === undefined || postId === undefined) {
       return;
     }
     try {
-      const data = require(`main/resource/document/post/${postId}.md`);
+      const data = require(`main/resource/document/post/${menu}/${postId}.md`);
       fetch(data)
         .then((it) => it.text())
         .then((it) => setSource(it));
     } catch (e) {
       setSource("The file you are looking for does not exist.");
     }
-  }, [postId]);
+  }, [menu, postId]);
 
   return <Post title={meta.title} date={meta.date} source={source} />;
 }
 
 const mapStateToProps = (state) => ({
   state: state.posts,
+  menu: state.menu.menu,
 });
 
 const mapDispatchToProps = (dispatch) => ({
