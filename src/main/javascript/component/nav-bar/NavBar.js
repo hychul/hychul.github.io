@@ -67,6 +67,7 @@ function NavBar(props) {
             justifyContent: "space-between",
             alignItems: "center",
             margin: "0.5rem",
+            padding: "0rem 0.5rem",
           }}
         >
           <Link
