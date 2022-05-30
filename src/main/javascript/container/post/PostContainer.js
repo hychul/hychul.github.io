@@ -6,47 +6,46 @@ import { loadPosts } from "main/javascript/redux/reducer/post";
 function PostContainer(props) {
   props.loadPosts();
 
-  const menu = props.menu;
   const postId = props.postId;
 
   const [meta, setMeta] = useState({ title: "", date: "" });
   const [source, setSource] = useState();
 
   useEffect(() => {
-    const postList = props.state.postMap.get("menu").get("all") ?? [];
+    const postList = props.state.postMap?.get("menu")?.get("all") ?? [];
     postList.forEach((element) => {
       // eslint-disable-next-line
       if (element.postId == postId) {
         setMeta({
+          menu: element.menu,
           title: element.title,
           date: element.date,
         });
         return;
       }
     });
-  }, [props.state.postMap, menu, postId]);
+  }, [props.state.postMap, postId]);
 
   useEffect(() => {
     setSource("");
-    if (menu === undefined || postId === undefined) {
+    if (postId === undefined) {
       return;
     }
     try {
-      const data = require(`main/resource/document/post/${menu}/${postId}.md`);
+      const data = require(`main/resource/document/post/${meta.menu}/${postId}.md`);
       fetch(data)
         .then((it) => it.text())
         .then((it) => setSource(it));
     } catch (e) {
       setSource("The file you are looking for does not exist.");
     }
-  }, [menu, postId]);
+  }, [postId, meta]);
 
   return <Post title={meta.title} date={meta.date} source={source} />;
 }
 
 const mapStateToProps = (state) => ({
   state: state.posts,
-  menu: state.menu.menu,
 });
 
 const mapDispatchToProps = (dispatch) => ({
