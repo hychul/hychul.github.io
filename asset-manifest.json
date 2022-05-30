@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.48392de3.css",
-    "main.js": "/static/js/main.d2fba661.js",
+    "main.js": "/static/js/main.68295a4d.js",
     "static/js/787.02de122f.chunk.js": "/static/js/787.02de122f.chunk.js",
     "static/media/2019-01-11-reactive-stream.md": "/static/media/2019-01-11-reactive-stream.11b48ae68e6829c17ff2.md",
     "static/media/2018-04-09-tobis-spring-3.1-vol1-chapter4.md": "/static/media/2018-04-09-tobis-spring-3.1-vol1-chapter4.8f4239614e660910c815.md",
@@ -20,7 +20,7 @@
     "static/media/2018-10-14-spring-json-response.md": "/static/media/2018-10-14-spring-json-response.680d2a1b40e1fb9364a8.md",
     "static/media/2018-06-01-supercell-dev-culture.md": "/static/media/2018-06-01-supercell-dev-culture.ab47ae67a9f1158f5f57.md",
     "static/media/2019-01-14-spring-webflux.md": "/static/media/2019-01-14-spring-webflux.4f597a2222ffe905a657.md",
-    "static/media/post.meta": "/static/media/post.d8b940714d16af36310f.meta",
+    "static/media/post.meta": "/static/media/post.59421a4291edd65104cf.meta",
     "static/media/2018-08-15-spring-mvc.md": "/static/media/2018-08-15-spring-mvc.2c042956f7555351feb5.md",
     "static/media/2021-06-22-mysql-function.md": "/static/media/2021-06-22-mysql-function.94ab0a13022546abe63e.md",
     "static/media/2018-04-02-game-resource-management.md": "/static/media/2018-04-02-game-resource-management.f34a786ac0a3ba231ab0.md",
@@ -57,6 +57,7 @@
     "static/media/2021-12-08-git-branch-on-prompt.md": "/static/media/2021-12-08-git-branch-on-prompt.458812c665c718011f4b.md",
     "static/media/2021-04-21-web-client-override-base-url-issue.md": "/static/media/2021-04-21-web-client-override-base-url-issue.72139842cee475fdf7a5.md",
     "static/media/2020-04-17-how-lombok-works.md": "/static/media/2020-04-17-how-lombok-works.a8e776e21a5c5e9bdf3c.md",
+    "static/media/2022-05-23-teaching-from-others-faults.md": "/static/media/2022-05-23-teaching-from-others-faults.a1c1a3d42dd1448e8e74.md",
     "static/media/2019-07-02-git-description.md": "/static/media/2019-07-02-git-description.beac7b04f3348fcb03b7.md",
     "static/media/2022-01-14-mac-brew-install-jdk.md": "/static/media/2022-01-14-mac-brew-install-jdk.6b2798aa410b65fd6b56.md",
     "static/media/-2022-01-18-how-minecraft-generate-terrein.md": "/static/media/-2022-01-18-how-minecraft-generate-terrein.4b66020edd79f10e00d9.md",
@@ -145,11 +146,11 @@
     "static/media/-2021-07-15-jenkins-github-pr-test.md": "/static/media/-2021-07-15-jenkins-github-pr-test.31d6cfe0d16ae931b73c.md",
     "static/media/-2022-01-04-kafka-concurrency-handling.md": "/static/media/-2022-01-04-kafka-concurrency-handling.31d6cfe0d16ae931b73c.md",
     "main.48392de3.css.map": "/static/css/main.48392de3.css.map",
-    "main.d2fba661.js.map": "/static/js/main.d2fba661.js.map",
+    "main.68295a4d.js.map": "/static/js/main.68295a4d.js.map",
     "787.02de122f.chunk.js.map": "/static/js/787.02de122f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48392de3.css",
-    "static/js/main.d2fba661.js"
+    "static/js/main.68295a4d.js"
   ]
 }
