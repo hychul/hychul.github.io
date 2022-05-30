@@ -87,7 +87,7 @@ function NavBar(props) {
               verticalAlign: "middle",
               fontWeight: "bold",
               // eslint-disable-next-line
-              color: menu == "thoughts" ? "#a4dbe8" : "#a3b1c0",
+              color: menu == "thoughts" ? "#f6eb61" : "#a4dbe8",
               fontSize: "16px",
             }}
             onClick={() => {
@@ -112,7 +112,7 @@ function NavBar(props) {
               verticalAlign: "middle",
               fontWeight: "bold",
               // eslint-disable-next-line
-              color: menu == "dev" ? "#a4dbe8" : "#a3b1c0",
+              color: menu == "dev" ? "#f6eb61" : "#a4dbe8",
               fontSize: "16px",
             }}
             onClick={() => {
@@ -137,7 +137,7 @@ function NavBar(props) {
               verticalAlign: "middle",
               fontWeight: "bold",
               // eslint-disable-next-line
-              color: menu == "tags" ? "#a4dbe8" : "#a3b1c0",
+              color: menu == "tags" ? "#f6eb61" : "#a4dbe8",
               fontSize: "16px",
             }}
             onClick={() => {
