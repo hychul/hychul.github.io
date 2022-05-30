@@ -7,7 +7,9 @@ function PostListPage() {
   const location = useLocation();
   const query = queryStirng.parse(location.search);
 
-  return <PostListContainer tag={query.tag} page={query.page} />;
+  return (
+    <PostListContainer menu={query.menu} tag={query.tag} page={query.page} />
+  );
 }
 
 export default PostListPage;

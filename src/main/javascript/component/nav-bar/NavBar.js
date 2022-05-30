@@ -1,14 +1,11 @@
-import { UPDATE_MENU } from "main/javascript/redux/action";
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { UPDATE_MENU } from "main/javascript/redux/action";
 
 function NavBar(props) {
-  var menu = props.menu.menu;
-  var home = props.home;
-  var thoughs = props.thoughts;
-  var dev = props.dev;
-  var tags = props.tags;
+  var currentMenu = props.menu;
+  var setMenuHome = props.setMenuHome;
 
   return (
     <div
@@ -46,7 +43,7 @@ function NavBar(props) {
           to={{ pathname: `/` }}
           replace
           onClick={() => {
-            home();
+            setMenuHome();
           }}
         >
           <div
@@ -75,6 +72,7 @@ function NavBar(props) {
           <Link
             to={{
               pathname: `/posts`,
+              search: `?menu=dev`,
             }}
             style={{
               gridRow: "2",
@@ -88,11 +86,8 @@ function NavBar(props) {
               verticalAlign: "middle",
               fontWeight: "bold",
               // eslint-disable-next-line
-              color: menu == "dev" ? "#f6eb61" : "#a4dbe8",
+              color: currentMenu == "dev" ? "#f6eb61" : "#a4dbe8",
               fontSize: "16px",
-            }}
-            onClick={() => {
-              dev();
             }}
           >
             DEV
@@ -100,6 +95,7 @@ function NavBar(props) {
           <Link
             to={{
               pathname: `/posts`,
+              search: `?menu=thoughts`,
             }}
             style={{
               gridRow: "2",
@@ -112,11 +108,8 @@ function NavBar(props) {
               verticalAlign: "middle",
               fontWeight: "bold",
               // eslint-disable-next-line
-              color: menu == "thoughts" ? "#f6eb61" : "#a4dbe8",
+              color: currentMenu == "thoughts" ? "#f6eb61" : "#a4dbe8",
               fontSize: "16px",
-            }}
-            onClick={() => {
-              thoughs();
             }}
           >
             THOUGHTS
@@ -137,11 +130,8 @@ function NavBar(props) {
               verticalAlign: "middle",
               fontWeight: "bold",
               // eslint-disable-next-line
-              color: menu == "tags" ? "#f6eb61" : "#a4dbe8",
+              color: currentMenu == "tags" ? "#f6eb61" : "#a4dbe8",
               fontSize: "16px",
-            }}
-            onClick={() => {
-              tags();
             }}
           >
             TAGS
@@ -153,14 +143,11 @@ function NavBar(props) {
 }
 
 const mapStateToProps = (state) => ({
-  menu: state.menu,
+  menu: state.menu.menu,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  home: () => dispatch({ type: UPDATE_MENU, menu: "home" }),
-  thoughts: () => dispatch({ type: UPDATE_MENU, menu: "thoughts" }),
-  dev: () => dispatch({ type: UPDATE_MENU, menu: "dev" }),
-  tags: () => dispatch({ type: UPDATE_MENU, menu: "tags" }),
+  setMenuHome: () => dispatch({ type: UPDATE_MENU, menu: "home" }),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
