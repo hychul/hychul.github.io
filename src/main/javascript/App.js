@@ -6,6 +6,7 @@ import HomePage from "./page/HomePage";
 import PostListPage from "main/javascript/page/PostListPage";
 import PostPage from "main/javascript/page/PostPage";
 import TagGroupPage from "./page/TagGroupPage";
+import PortfolioPage from "./page/PortfolioPage";
 import ReactPage from "main/javascript/page/ReactPage";
 import Copyright from "main/javascript/component/copyright/Copyright";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/posts" element={<PostListPage />} />
         <Route path="/posts/:id" element={<PostPage />} />
         <Route path="/tags" element={<TagGroupPage />} />
+        <Route path="portfolio" element={<PortfolioPage />} />
         <Route path="/react" element={<ReactPage />} />
       </Routes>
       <Copyright />
