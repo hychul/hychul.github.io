@@ -32,6 +32,6 @@ UV에는 좌표값만 있을 뿐 어느 텍스처를 타겟으로 한다는 정�
 
 > ### 연관글
 >
-> [코딩 없는 게임 엔진 이야기 1 - 게임 루프](https://hychul.github.io/#/posts/2018-10-20-game-engine-loop)  
-> [코딩 없는 게임 엔진 이야기 2 - 멀티코어 게임 루프](https://hychul.github.io/#/posts/2018-11-27-game-engine-multicore-game-loop)  
+> [코딩 없는 게임 엔진 이야기 1 - 게임 루프](https://hychul.github.io/posts/2018-10-20-game-engine-loop)  
+> [코딩 없는 게임 엔진 이야기 2 - 멀티코어 게임 루프](https://hychul.github.io/posts/2018-11-27-game-engine-multicore-game-loop)  
 > 코딩 없는 게임 엔진 이야기 3 - 효율적인 렌더링

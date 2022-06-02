@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.48392de3.css",
-    "main.js": "/static/js/main.4d61bd94.js",
+    "main.js": "/static/js/main.0d0850b1.js",
     "static/js/787.02de122f.chunk.js": "/static/js/787.02de122f.chunk.js",
     "static/media/2019-01-11-reactive-stream.md": "/static/media/2019-01-11-reactive-stream.11b48ae68e6829c17ff2.md",
     "static/media/2018-04-09-tobis-spring-3.1-vol1-chapter4.md": "/static/media/2018-04-09-tobis-spring-3.1-vol1-chapter4.8f4239614e660910c815.md",
@@ -30,11 +30,11 @@
     "static/media/2018-06-04-zelda-breaking-convention.md": "/static/media/2018-06-04-zelda-breaking-convention.e443d46055550c0e710e.md",
     "static/media/2019-03-23-java-nio-and-multiplex-server.md": "/static/media/2019-03-23-java-nio-and-multiplex-server.7463783fa6d2f1494d0a.md",
     "static/media/2019-08-01-swagger-api-document-file.md": "/static/media/2019-08-01-swagger-api-document-file.d7e821bd583870b62103.md",
-    "static/media/2018-10-20-game-engine-loop.md": "/static/media/2018-10-20-game-engine-loop.405b5616e810affd471d.md",
+    "static/media/2018-10-20-game-engine-loop.md": "/static/media/2018-10-20-game-engine-loop.1b2dc33c4bc4888e90ae.md",
     "static/media/2021-04-21-webclient-route-load-balancer-sertting.md": "/static/media/2021-04-21-webclient-route-load-balancer-sertting.608a8d282be1c4e7defb.md",
     "static/media/2019-03-19-reactor-transform.md": "/static/media/2019-03-19-reactor-transform.afdc777412853714ea1b.md",
     "static/media/2018-08-24-custom-aop.md": "/static/media/2018-08-24-custom-aop.d3d9da7306543947d3ac.md",
-    "static/media/2018-11-27-game-engine-multicore-game-loop.md": "/static/media/2018-11-27-game-engine-multicore-game-loop.dca68abf7e267de37454.md",
+    "static/media/2018-11-27-game-engine-multicore-game-loop.md": "/static/media/2018-11-27-game-engine-multicore-game-loop.44c920e67cef77eebf5a.md",
     "static/media/2018-08-14-sprite-batch.md": "/static/media/2018-08-14-sprite-batch.6147ef00c20b52f7982d.md",
     "static/media/2019-05-24-applying-audit-to-jpa.md": "/static/media/2019-05-24-applying-audit-to-jpa.5b7006f92ad2a75b2c96.md",
     "static/media/-2021-04-06-kotlin-coroutine.md": "/static/media/-2021-04-06-kotlin-coroutine.f31fb2a8563f024889e5.md",
@@ -43,7 +43,7 @@
     "static/media/2021-05-11-transfer-encoding-chunk-incompleted.md": "/static/media/2021-05-11-transfer-encoding-chunk-incompleted.94998fdae88658da0f94.md",
     "static/media/2018-07-16-rest-api.md": "/static/media/2018-07-16-rest-api.b46f61724db046ecad64.md",
     "static/media/2020-04-17-how-jpa-works.md": "/static/media/2020-04-17-how-jpa-works.5ab3caed685d8d20b68f.md",
-    "static/media/2018-11-29-game-engine-rendering-optimization.md": "/static/media/2018-11-29-game-engine-rendering-optimization.2a59d5abfeb4642a2180.md",
+    "static/media/2018-11-29-game-engine-rendering-optimization.md": "/static/media/2018-11-29-game-engine-rendering-optimization.1422d3bdf58de912ce4a.md",
     "static/media/2018-04-11-astar.md": "/static/media/2018-04-11-astar.07457de51b4e3919cf26.md",
     "static/media/2018-08-16-di-and-aop.md": "/static/media/2018-08-16-di-and-aop.90b5a27782c3c4a834a0.md",
     "static/media/2021-05-06-context-path-webflux.md": "/static/media/2021-05-06-context-path-webflux.b54c4f23253268fa88c9.md",
@@ -57,7 +57,8 @@
     "static/media/2021-12-08-git-branch-on-prompt.md": "/static/media/2021-12-08-git-branch-on-prompt.458812c665c718011f4b.md",
     "static/media/2021-04-21-web-client-override-base-url-issue.md": "/static/media/2021-04-21-web-client-override-base-url-issue.72139842cee475fdf7a5.md",
     "static/media/2020-04-17-how-lombok-works.md": "/static/media/2020-04-17-how-lombok-works.a8e776e21a5c5e9bdf3c.md",
-    "static/media/index.md": "/static/media/index.13731e35d5c77689e046.md",
+    "static/media/2022-05-23-teaching-from-others-faults.md": "/static/media/2022-05-23-teaching-from-others-faults.a1c1a3d42dd1448e8e74.md",
+    "static/media/index.md": "/static/media/index.9e12057d718128a24b8a.md",
     "static/media/2019-07-02-git-description.md": "/static/media/2019-07-02-git-description.beac7b04f3348fcb03b7.md",
     "static/media/2022-01-14-mac-brew-install-jdk.md": "/static/media/2022-01-14-mac-brew-install-jdk.6b2798aa410b65fd6b56.md",
     "static/media/-2022-01-18-how-minecraft-generate-terrein.md": "/static/media/-2022-01-18-how-minecraft-generate-terrein.4b66020edd79f10e00d9.md",
@@ -146,11 +147,11 @@
     "static/media/-2021-07-15-jenkins-github-pr-test.md": "/static/media/-2021-07-15-jenkins-github-pr-test.31d6cfe0d16ae931b73c.md",
     "static/media/-2022-01-04-kafka-concurrency-handling.md": "/static/media/-2022-01-04-kafka-concurrency-handling.31d6cfe0d16ae931b73c.md",
     "main.48392de3.css.map": "/static/css/main.48392de3.css.map",
-    "main.4d61bd94.js.map": "/static/js/main.4d61bd94.js.map",
+    "main.0d0850b1.js.map": "/static/js/main.0d0850b1.js.map",
     "787.02de122f.chunk.js.map": "/static/js/787.02de122f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48392de3.css",
-    "static/js/main.4d61bd94.js"
+    "static/js/main.0d0850b1.js"
   ]
 }
