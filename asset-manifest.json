@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.48392de3.css",
-    "main.js": "/static/js/main.552877bd.js",
+    "main.js": "/static/js/main.4d61bd94.js",
     "static/js/787.02de122f.chunk.js": "/static/js/787.02de122f.chunk.js",
     "static/media/2019-01-11-reactive-stream.md": "/static/media/2019-01-11-reactive-stream.11b48ae68e6829c17ff2.md",
     "static/media/2018-04-09-tobis-spring-3.1-vol1-chapter4.md": "/static/media/2018-04-09-tobis-spring-3.1-vol1-chapter4.8f4239614e660910c815.md",
@@ -146,11 +146,11 @@
     "static/media/-2021-07-15-jenkins-github-pr-test.md": "/static/media/-2021-07-15-jenkins-github-pr-test.31d6cfe0d16ae931b73c.md",
     "static/media/-2022-01-04-kafka-concurrency-handling.md": "/static/media/-2022-01-04-kafka-concurrency-handling.31d6cfe0d16ae931b73c.md",
     "main.48392de3.css.map": "/static/css/main.48392de3.css.map",
-    "main.552877bd.js.map": "/static/js/main.552877bd.js.map",
+    "main.4d61bd94.js.map": "/static/js/main.4d61bd94.js.map",
     "787.02de122f.chunk.js.map": "/static/js/787.02de122f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48392de3.css",
-    "static/js/main.552877bd.js"
+    "static/js/main.4d61bd94.js"
   ]
 }
