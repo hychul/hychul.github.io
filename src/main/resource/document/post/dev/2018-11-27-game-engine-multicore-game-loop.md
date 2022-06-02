@@ -46,6 +46,6 @@
 
 > ### 연관글
 >
-> [코딩 없는 게임 엔진 이야기 1 - 게임 루프](https://hychul.github.io/#/posts/2018-10-20-game-engine-loop)  
+> [코딩 없는 게임 엔진 이야기 1 - 게임 루프](https://hychul.github.io/posts/2018-10-20-game-engine-loop)  
 > 코딩 없는 게임 엔진 이야기 2 - 멀티코어 게임 루프  
-> [코딩 없는 게임 엔진 이야기 3 - 효율적인 렌더링](https://hychul.github.io/#/posts/2018-11-29-game-engine-rendering-optimization)
+> [코딩 없는 게임 엔진 이야기 3 - 효율적인 렌더링](https://hychul.github.io/posts/2018-11-29-game-engine-rendering-optimization)
