@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.48392de3.css",
-    "main.js": "/static/js/main.03628732.js",
+    "main.js": "/static/js/main.552877bd.js",
     "static/js/787.02de122f.chunk.js": "/static/js/787.02de122f.chunk.js",
     "static/media/2019-01-11-reactive-stream.md": "/static/media/2019-01-11-reactive-stream.11b48ae68e6829c17ff2.md",
     "static/media/2018-04-09-tobis-spring-3.1-vol1-chapter4.md": "/static/media/2018-04-09-tobis-spring-3.1-vol1-chapter4.8f4239614e660910c815.md",
@@ -57,7 +57,7 @@
     "static/media/2021-12-08-git-branch-on-prompt.md": "/static/media/2021-12-08-git-branch-on-prompt.458812c665c718011f4b.md",
     "static/media/2021-04-21-web-client-override-base-url-issue.md": "/static/media/2021-04-21-web-client-override-base-url-issue.72139842cee475fdf7a5.md",
     "static/media/2020-04-17-how-lombok-works.md": "/static/media/2020-04-17-how-lombok-works.a8e776e21a5c5e9bdf3c.md",
-    "static/media/2022-05-23-teaching-from-others-faults.md": "/static/media/2022-05-23-teaching-from-others-faults.a1c1a3d42dd1448e8e74.md",
+    "static/media/index.md": "/static/media/index.13731e35d5c77689e046.md",
     "static/media/2019-07-02-git-description.md": "/static/media/2019-07-02-git-description.beac7b04f3348fcb03b7.md",
     "static/media/2022-01-14-mac-brew-install-jdk.md": "/static/media/2022-01-14-mac-brew-install-jdk.6b2798aa410b65fd6b56.md",
     "static/media/-2022-01-18-how-minecraft-generate-terrein.md": "/static/media/-2022-01-18-how-minecraft-generate-terrein.4b66020edd79f10e00d9.md",
@@ -146,11 +146,11 @@
     "static/media/-2021-07-15-jenkins-github-pr-test.md": "/static/media/-2021-07-15-jenkins-github-pr-test.31d6cfe0d16ae931b73c.md",
     "static/media/-2022-01-04-kafka-concurrency-handling.md": "/static/media/-2022-01-04-kafka-concurrency-handling.31d6cfe0d16ae931b73c.md",
     "main.48392de3.css.map": "/static/css/main.48392de3.css.map",
-    "main.03628732.js.map": "/static/js/main.03628732.js.map",
+    "main.552877bd.js.map": "/static/js/main.552877bd.js.map",
     "787.02de122f.chunk.js.map": "/static/js/787.02de122f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48392de3.css",
-    "static/js/main.03628732.js"
+    "static/js/main.552877bd.js"
   ]
 }
