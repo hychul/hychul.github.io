@@ -33,7 +33,7 @@ function PostListContainer(props) {
     }
   }, [props, props.state.postMap, menu, tag]);
 
-  return <PostList page={page} tag={tag} postList={postList} />;
+  return <PostList menu={menu} page={page} tag={tag} postList={postList} />;
 }
 
 const mapStateToProps = (state) => ({

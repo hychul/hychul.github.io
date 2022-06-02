@@ -7,6 +7,7 @@ import "main/resource/style/App.scss";
 const pagingSize = 10;
 
 function PostList(props) {
+  const menu = props.menu;
   const page = props.page;
   const tag = props.tag;
   const postList = props.postList;
@@ -86,7 +87,10 @@ function PostList(props) {
 
             nevigate({
               pathname: "/posts",
-              search: `?page=${index}&tag=${tag}`,
+              search: `?${
+                // eslint-disable-next-line
+                tag != "all" ? `tag=${tag}` : `menu=${menu}`
+              }&page=${index}`,
             });
           }}
         />
