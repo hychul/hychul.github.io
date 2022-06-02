@@ -20,7 +20,7 @@ function App() {
         <Route path="/posts" element={<PostListPage />} />
         <Route path="/posts/:id" element={<PostPage />} />
         <Route path="/tags" element={<TagGroupPage />} />
-        <Route path="portfolio" element={<PortfolioPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/react" element={<ReactPage />} />
       </Routes>
       <Copyright />
