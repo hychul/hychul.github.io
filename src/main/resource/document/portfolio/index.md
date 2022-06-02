@@ -4,7 +4,7 @@
 이메일 : hychome@gmail.com  
 블로그 : hychul.github.io
 
-<br>
+<hr style="visibility:hidden;" />
 
 ## 경력 : 5년
 
@@ -15,7 +15,7 @@
 | 라인스튜디오 (라인 레인저스 / 라인 쉐프 - 게임 클라 / 웹서버 개발) | 17.11 ~ 18.12 |
 | 라인플러스 (광고 플랫폼 DSP - CMS 서버 개발) | 19.01 ~ 현재 |
 
-<br>
+<hr style="visibility:hidden;" />
 
 ## 학력
 
@@ -23,7 +23,7 @@
 | :---------------------------------: | :-----------: |
 | 숭실대 IT대학 컴퓨터학부 (3.39/4.5) | 11.03 ~ 18.02 |
 
-<br>
+<hr style="visibility:hidden;" />
 
 ## 수상 및 기타
 
@@ -37,7 +37,7 @@
 | 2017.02.04 | 올해의 BRIGDGE, 수상, 대학 연합 게임 동아리 BRIDGE |  |
 | 2018.02.01 | LINE Plus 신입사원 프로젝트 우수 | 채팅앱과 웹앱 |
 
-<br>
+<hr style="visibility:hidden;" />
 
 # Project
 
@@ -103,7 +103,7 @@ VR과 Leap Motion 그리고 안드로이드의 연동을 통한 손동작 인식
 
 ## Event 기반 Billing Charge
 
-## Spring Cloud Gateway
+## GatewayZuul Gateway -> Spring Cloud Gateway)
 
 ## Creative 컴포넌트 분리
 
