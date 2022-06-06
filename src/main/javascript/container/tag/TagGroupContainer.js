@@ -19,7 +19,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   loadPosts: () => dispatch(loadPosts()),
-  setMenuTags: () => dispatch({ type: UPDATE_MENU, menu: "tags" }),
+  setMenuTags: () => dispatch({ type: UPDATE_MENU, menu: "tag" }),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(TagGroupContainer);

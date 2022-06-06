@@ -44,7 +44,7 @@ const mapDispatchToProps = (dispatch) => ({
   loadPosts: () => dispatch(loadPosts()),
   setMenuDev: () => dispatch({ type: UPDATE_MENU, menu: "dev" }),
   setMenuThoughts: () => dispatch({ type: UPDATE_MENU, menu: "thoughts" }),
-  setMenuTags: () => dispatch({ type: UPDATE_MENU, menu: "tags" }),
+  setMenuTags: () => dispatch({ type: UPDATE_MENU, menu: "tag" }),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PostListContainer);

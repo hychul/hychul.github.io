@@ -131,11 +131,11 @@ function NavBar(props) {
               verticalAlign: "middle",
               fontWeight: "bold",
               // eslint-disable-next-line
-              color: currentMenu == "tags" ? "#f6eb61" : "#a4dbe8",
+              color: currentMenu == "tag" ? "#f6eb61" : "#a4dbe8",
               fontSize: "16px",
             }}
           >
-            TAGS
+            TAG
           </Link>
         </div>
       </div>
