@@ -24,8 +24,8 @@ function PostListContainer(props) {
         case "dev":
           props.setMenuDev();
           break;
-        case "thought":
-          props.setMenuThought();
+        case "archive":
+          props.setMenuArchive();
           break;
         default:
           break;
@@ -43,7 +43,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   loadPosts: () => dispatch(loadPosts()),
   setMenuDev: () => dispatch({ type: UPDATE_MENU, menu: "dev" }),
-  setMenuThought: () => dispatch({ type: UPDATE_MENU, menu: "thought" }),
+  setMenuArchive: () => dispatch({ type: UPDATE_MENU, menu: "archive" }),
   setMenuTags: () => dispatch({ type: UPDATE_MENU, menu: "tag" }),
 });
 
