@@ -96,7 +96,7 @@ function NavBar(props) {
           <Link
             to={{
               pathname: `/posts`,
-              search: `?menu=thoughts`,
+              search: `?menu=thought`,
             }}
             style={{
               gridRow: "2",
@@ -109,11 +109,11 @@ function NavBar(props) {
               verticalAlign: "middle",
               fontWeight: "bold",
               // eslint-disable-next-line
-              color: currentMenu == "thoughts" ? "#f6eb61" : "#a4dbe8",
+              color: currentMenu == "thought" ? "#f6eb61" : "#a4dbe8",
               fontSize: "16px",
             }}
           >
-            THOUGHTS
+            THOUGHT
           </Link>
           <Link
             to={{
