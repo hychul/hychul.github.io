@@ -148,8 +148,17 @@ fallback 등을 통해 장애 전파를 막음
 
 ## 만능은 아니다
 
+https://www.ddaily.co.kr/m/m_article/?no=128179
+
 ## Requirement
 
 ![](https://developers.redhat.com/sites/default/files/blog/2016/12/screen-shot-2016-12-06-at-10-30-08.png)
 
 <!-- https://www.youtube.com/watch?v=8d4h7K_Fq-0 -->
+<!-- https://cloudacademy.com/blog/microservices-architecture-challenge-advantage-drawback/ -->
+<!-- https://hibuz.com/building-modular-monoliths/ -->
+<!-- https://velog.io/@jifrozen/Dining-together-%EC%99%9C-MSA-%EC%9D%84-%EC%84%A0%ED%83%9D%ED%96%88%EC%9D%84%EA%B9%8C-Monolithic-Architectrue-vs-Micro-Services-Architecture -->
+<!-- https://martinfowler.com/bliki/DesignStaminaHypothesis.html -->
+<!-- https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes -->
+<!-- https://s-core.co.kr/insight/view/do-not-use-msa-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EA%B0%80-%EA%BC%AD-%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80%EC%9A%94/ -->
+<!-- https://github.com/msbaek/memo/blob/master/1.%20MicroService%EB%9E%80.md -->
