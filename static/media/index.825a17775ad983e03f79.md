@@ -27,13 +27,13 @@
 ## 수상 및 기타
 
 | 일자 | 제목 | 내용 |
-| :-: | :-: | :-- |
+| :-: | :-: | :-- | --- | --- |
 | 2011.11.09 | 창의적 공학 설계, 우수상, 숭실대 컴퓨터학부 | AR(Kinect)을 활용한 볼링 시뮬레이션 게임 |
 | 2015.10.07 | ACM icpc 국내 예선, 교내 4위, 숭실대 IT 대학 |  |
-| 2016.03 ~ 2017.02 | 대학생 연합 게임 제작 동아리 BRIDGE (게임 개발) |  |
+| <!-- | 2016.03 ~ 2017.02 | 대학생 연합 게임 제작 동아리 BRIDGE (게임 개발) |  | --> |
 | 2016.10.04 | IT 대학 소프트웨어 공모전, 은상, 숭실대 IT 대학 | VR과 AR(Leap Motion)을 활용한 손가락 재활 프로그램 |
 | 2016.11.16 | 2016 올해의 앱, 대상, 디지털 조선일보 | 콩톡 : 채팅을 통한 광고 리워드 앱 |
-| 2017.02.04 | 올해의 BRIGDGE, 수상, 대학 연합 게임 동아리 BRIDGE |  |
+| <!-- | 2017.02.04 | 올해의 BRIGDGE, 수상, 대학 연합 게임 동아리 BRIDGE |  | --> |
 | 2018.02.01 | LINE Plus 신입사원 프로젝트 우수 | 채팅앱과 웹앱 |
 
 <hr style="visibility:hidden;" />
@@ -56,9 +56,9 @@
 
 업무를 통해 개발 혹은 개선한 것들
 
-- 게임 엔티티 간 Event 기반 통신
-- Webflux Notification Server 구축
-- Event 기반 Billing Charge
-- GatewayZuul Gateway -> Spring Cloud Gateway)
-- Creative 컴포넌트 분리
-- Adaccount 컴포넌트 분리
+- LINE Chef 게임 로직 개선 : 게임 엔티티 간 Event 기반 통신
+- LINE ADS DSP : Webflux Notification Server 구축
+- LINE ADS DSP : Event 기반 Billing Charge
+- LINE ADS DSP : GatewayZuul Gateway -> Spring Cloud Gateway)
+- LINE ADS DSP : Creative 컴포넌트 분리
+- LINE ADS DSP : Adaccount 컴포넌트 분리

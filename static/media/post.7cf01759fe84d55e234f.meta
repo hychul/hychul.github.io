@@ -1,4 +1,5 @@
 // categories :: {postId = 'date'-'title'} :: {title} :: {tags|optional}
+archive :: 2022-06-20-do-not-use-mvc-in-unity :: Do not use MVC in Unity :: 
 // archive :: 2022-05-23-teaching-from-others-faults :: 반면교사 :: 
 dev :: 2022-03-31-spring-cloud-config-runtime-update :: Spring Cloud Config 런타임 리프레시 방법 :: spring, java, spring-cloud, spring-cloud-config
 dev :: 2022-01-29-unity-urp-transparency-sort-mode :: Unity의 URP에서 Transparency Sort Mode 변경하기 :: unity, c#

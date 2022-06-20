@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.48392de3.css",
-    "main.js": "/static/js/main.86485c1e.js",
+    "main.js": "/static/js/main.f3304b1b.js",
     "static/js/787.02de122f.chunk.js": "/static/js/787.02de122f.chunk.js",
     "static/media/2019-01-11-reactive-stream.md": "/static/media/2019-01-11-reactive-stream.11b48ae68e6829c17ff2.md",
     "static/media/2018-04-09-tobis-spring-3.1-vol1-chapter4.md": "/static/media/2018-04-09-tobis-spring-3.1-vol1-chapter4.8f4239614e660910c815.md",
@@ -20,8 +20,8 @@
     "static/media/2018-03-31-tobis-spring-3.1-vol1-chapter1.md": "/static/media/2018-03-31-tobis-spring-3.1-vol1-chapter1.c8218eec33f7260f2288.md",
     "static/media/2018-10-14-spring-json-response.md": "/static/media/2018-10-14-spring-json-response.680d2a1b40e1fb9364a8.md",
     "static/media/2018-06-01-supercell-dev-culture.md": "/static/media/2018-06-01-supercell-dev-culture.ab47ae67a9f1158f5f57.md",
+    "static/media/post.meta": "/static/media/post.7cf01759fe84d55e234f.meta",
     "static/media/2019-01-14-spring-webflux.md": "/static/media/2019-01-14-spring-webflux.4f597a2222ffe905a657.md",
-    "static/media/post.meta": "/static/media/post.70905193eff685b0be59.meta",
     "static/media/2018-08-15-spring-mvc.md": "/static/media/2018-08-15-spring-mvc.2c042956f7555351feb5.md",
     "static/media/2021-06-22-mysql-function.md": "/static/media/2021-06-22-mysql-function.94ab0a13022546abe63e.md",
     "static/media/week-7.md": "/static/media/week-7.37569047da61ad3d1d4a.md",
@@ -36,13 +36,13 @@
     "static/media/week-8.md": "/static/media/week-8.0269e120c77ce82c544a.md",
     "static/media/2019-08-01-swagger-api-document-file.md": "/static/media/2019-08-01-swagger-api-document-file.d7e821bd583870b62103.md",
     "static/media/2018-10-20-game-engine-loop.md": "/static/media/2018-10-20-game-engine-loop.1b2dc33c4bc4888e90ae.md",
+    "static/media/-2022-06-04-msa-for-non-developer.md": "/static/media/-2022-06-04-msa-for-non-developer.ee13fa1592a2bdf5cfab.md",
     "static/media/11.http-security-headers.md": "/static/media/11.http-security-headers.413a80f2a5087950a7cd.md",
     "static/media/2021-04-21-webclient-route-load-balancer-sertting.md": "/static/media/2021-04-21-webclient-route-load-balancer-sertting.608a8d282be1c4e7defb.md",
     "static/media/2019-03-19-reactor-transform.md": "/static/media/2019-03-19-reactor-transform.afdc777412853714ea1b.md",
     "static/media/2018-08-24-custom-aop.md": "/static/media/2018-08-24-custom-aop.d3d9da7306543947d3ac.md",
     "static/media/2018-11-27-game-engine-multicore-game-loop.md": "/static/media/2018-11-27-game-engine-multicore-game-loop.44c920e67cef77eebf5a.md",
     "static/media/2018-08-14-sprite-batch.md": "/static/media/2018-08-14-sprite-batch.6147ef00c20b52f7982d.md",
-    "static/media/-2022-06-04-msa-for-non-developer.md": "/static/media/-2022-06-04-msa-for-non-developer.b192325dd94ed36cf11d.md",
     "static/media/2019-05-24-applying-audit-to-jpa.md": "/static/media/2019-05-24-applying-audit-to-jpa.5b7006f92ad2a75b2c96.md",
     "static/media/-2021-04-06-kotlin-coroutine.md": "/static/media/-2021-04-06-kotlin-coroutine.f31fb2a8563f024889e5.md",
     "static/media/2015-09-21-linux-compile.md": "/static/media/2015-09-21-linux-compile.541a4fd217579ff15e9a.md",
@@ -53,6 +53,7 @@
     "static/media/2021-05-11-transfer-encoding-chunk-incompleted.md": "/static/media/2021-05-11-transfer-encoding-chunk-incompleted.94998fdae88658da0f94.md",
     "static/media/10.path-traversal.md": "/static/media/10.path-traversal.26c1bfe671735a09e3a3.md",
     "static/media/2018-07-16-rest-api.md": "/static/media/2018-07-16-rest-api.b46f61724db046ecad64.md",
+    "static/media/2022-06-20-do-not-use-mvc-in-unity.md": "/static/media/2022-06-20-do-not-use-mvc-in-unity.c2bcfcb73b6a4548718d.md",
     "static/media/2020-04-17-how-jpa-works.md": "/static/media/2020-04-17-how-jpa-works.5ab3caed685d8d20b68f.md",
     "static/media/2018-11-29-game-engine-rendering-optimization.md": "/static/media/2018-11-29-game-engine-rendering-optimization.1422d3bdf58de912ce4a.md",
     "static/media/2018-04-11-astar.md": "/static/media/2018-04-11-astar.07457de51b4e3919cf26.md",
@@ -94,11 +95,11 @@
     "static/media/2018-07-08-unity-vs-code-integration.md": "/static/media/2018-07-08-unity-vs-code-integration.6d8685b0dc3d514c6675.md",
     "static/media/week-10.md": "/static/media/week-10.37d0984e11e302d8e915.md",
     "static/media/09.open-redirect.md": "/static/media/09.open-redirect.f2fba8132a9e30706507.md",
+    "static/media/index.md": "/static/media/index.825a17775ad983e03f79.md",
     "static/media/-2021-11-30-spark.md": "/static/media/-2021-11-30-spark.bac08578ad7e37a02585.md",
     "static/media/-2021-06-05-webflux-delegating-authentication-manager.md": "/static/media/-2021-06-05-webflux-delegating-authentication-manager.84d6d2de374f8c90c97a.md",
     "static/media/2019-03-20-reactor-scheduler.md": "/static/media/2019-03-20-reactor-scheduler.7e8663070c3e761740c1.md",
     "static/media/week-3.md": "/static/media/week-3.a204acb671b2d2ead448.md",
-    "static/media/index.md": "/static/media/index.22f661eda72bf262b920.md",
     "static/media/2015-10-08-c-realtime-input.md": "/static/media/2015-10-08-c-realtime-input.5aa5bf7c44c9dd0c442a.md",
     "static/media/2021-11-30-karabiner-mac-language-transition.md": "/static/media/2021-11-30-karabiner-mac-language-transition.45fcc264391234657fb8.md",
     "static/media/2016-08-18-android-extern-module.md": "/static/media/2016-08-18-android-extern-module.1cdc5c78ae4ba41a6ca1.md",
@@ -168,11 +169,11 @@
     "static/media/-2021-07-15-jenkins-github-pr-test.md": "/static/media/-2021-07-15-jenkins-github-pr-test.31d6cfe0d16ae931b73c.md",
     "static/media/-2022-01-04-kafka-concurrency-handling.md": "/static/media/-2022-01-04-kafka-concurrency-handling.31d6cfe0d16ae931b73c.md",
     "main.48392de3.css.map": "/static/css/main.48392de3.css.map",
-    "main.86485c1e.js.map": "/static/js/main.86485c1e.js.map",
+    "main.f3304b1b.js.map": "/static/js/main.f3304b1b.js.map",
     "787.02de122f.chunk.js.map": "/static/js/787.02de122f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48392de3.css",
-    "static/js/main.86485c1e.js"
+    "static/js/main.f3304b1b.js"
   ]
 }
