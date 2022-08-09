@@ -251,4 +251,31 @@ public class OrderAdminController {
 
 ### 8.3.1 강제 버전 증가
 
+애그리거트에 애그리거트 루트 이외의 엔티티에서 변경이 발생하는 경우, JPA는 루트 엔티티의 버전 값을 증가 시키지 않는다. 이런 JPA의 특징은 애그리거트 관점에서 보면 문제가 된다.
+
+루트 엔티티는 변경이 없더라도 하위의 엔티티의 변경은 애그리거트 구성 요소가 변경되는 경우 애그리거트는 논리적으로 바뀐 것이기 때문이다. 때문에 애그리거트 내에 어떤 구성요소의 상태가 바뀌면 루트 애그리거트의 버전의 값이 증가해야 한다.
+
+#### JPA의 경우
+
+`EntityManager#find()` 메서드로 엔티티를 구할 때 강제로 버전 값을 증가시키는 잠금 모드인 `LockModeType.OPTIMISTIC_FORCE_INCREMENT`를 제공한다.
+
+```java
+@Repository
+public class JpaOrderRepository implements OrderRepository {
+    @PersistenceContext
+    private EntityManager entityManager;
+
+    @Override
+    public Order findByIdOptimisticLockMode(OrderNo id) {
+        return entiryManager.find(Order.class, id, LockModeType.OPTIMISTIC_FORCE_INCREMENT);
+    }
+}
+```
+
+`LockModeType.OPTIMISTIC_FORCE_INCREMENT` 모드를 사용하면 엔티티 상태의 변경과 관계 없이 트랜잭션 종료 시점에 버전 값 증가 처리를 수행한다.
+
+#### 스프링 데이터 JPA의 경우
+
+`@Lock` 어노테이션을 사용하여 모드를 지정할 수 있다.
+
 ## 8.4 오프라인 선점 잠금
