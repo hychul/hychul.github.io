@@ -94,6 +94,10 @@ org.springframework.cloud.client.circuitbreaker.NoFallbackAvailableException: No
 
 ## 4. Circuit Breaker Fallback Method 설정
 
+### 4-1 Circuit Breaker Factory
+
+### 4-2 @CircuitBreaker 어노테이션
+
 ```java
 @FeignClient(value = "${service-id.foo}")
 public interface FooFeignClient {
