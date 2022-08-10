@@ -98,7 +98,7 @@ public interface MemberRepository extends Repository<Member, MemberId> {
 
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     @QueryHints({
-        @QueryHint(name = javax.persistence.lock.timeout", value = "2000")
+        @QueryHint(name = "javax.persistence.lock.timeout", value = "2000")
     })
     @Query("select m from Member m where m.id = :id")
     Optional<Member> findByIdForUpdate(@Param("id") MemberId memberId);
