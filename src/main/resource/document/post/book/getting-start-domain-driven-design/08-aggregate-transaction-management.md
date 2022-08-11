@@ -19,14 +19,14 @@
 먼저 애그리거트를 구한 스레드가 애그리거트 사용이 끝날 내까지 다른 스레드에서 해당 애그리거트를 수정하지 못하게 하는 방식이다.
 
 ```
-Thread 1 -------+-------------------+-------------------+-----------------------------------
-                |                   |                   |
-         Select Aggregate   Modify Aggregate   Commit Transaction
-            Lock Access                           Release Lock
-Thread 2 --------+-----------------------------+------------------+---------------------+---
-                 | ======== Blocking ========> |                  |                     |
-       Try Select Aggregate             Select Aggregate   Modify Aggregate   Commit Transaction
-         Wait Lock Release                Lock Access                            Release Lock
+Thread 1 -------+------------------+-----------------+---------------------------------------
+                |                  |                 |
+        Select Aggregate   Modify Aggregate  Commit Transaction
+           Lock Access                          Release Lock
+Thread 2 --------+------------------------------------+-----------------+-----------------+--
+                 | ============ Blocking ===========> |                 |                 |
+       Try Select Aggregate                   Select Aggregate  Modify Aggregate  Commit Transaction
+         Wait Lock Release                       Lock Access                         Release Lock
 ```
 
 스레드 1에서 먼전 선점 잠금 방식으로 애그리거트를 구하면 스레드 1에서 해제를 할 떄까지 스레드 2에선 대기 상태가 된다. 스레드 1의 사용이 끝난 후 애그리거트의 상태를 스레드 2에서 사용 불가한 상태로 변경하는 경우, 스레드 2에선 사용 불가 에러를 발생하게 된다.
