@@ -72,6 +72,8 @@ org.springframework.cloud.client.circuitbreaker.NoFallbackAvailableException: No
 
 ## 3. Circuit Breaker Config
 
+https://resilience4j.readme.io/docs/circuitbreaker
+
 ### 3.1 yaml 설정
 
 ### 3.2 Configuration class 설정
@@ -112,6 +114,10 @@ public interface FooFeignClient {
     }
 }
 ```
+
+## 5. TimeLimiter 설정
+
+https://resilience4j.readme.io/docs/timeout
 
 # 참고
 
