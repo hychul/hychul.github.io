@@ -119,6 +119,46 @@ public interface FooFeignClient {
 
 https://resilience4j.readme.io/docs/timeout
 
+FeignClient의 타임아웃과 TimeLimiter의 타임아웃 설정은 서로 독립적으로 동작하지만 같은 값으로 설정하는 경우 TimeLimiter에서 먼저 TimeoutException을 발생시킨다.
+
+```bash
+Exception:java.util.concurrent.TimeoutException: TimeLimiter 'FooClient#bar()' recorded a timeout exception.
+```
+
+### Global 설정
+
+```yaml
+resilience4j:
+  timelimiter:
+    configs:
+      default:
+        cancelRunningFuture: false
+        timeoutDuration: 1000ms
+```
+
+> **Duration in yaml**  
+> `ns` for nanoseconds  
+> `us` for microseconds  
+> `ms` for milliseconds  
+> `s` for seconds  
+> `m` for minutes  
+> `h` for hours  
+> `d` for days
+
+```java
+    @Bean
+    public TimeLimiterRegistry globalTimeLimiterRegistry() {
+        TimeLimiterConfig tlConfig = TimeLimiterConfig.custom()
+                                                      .cancelRunningFuture(false)
+                                                      .timeoutDuration(Duration.ofMills)1000)
+                                                      .build();
+
+        return TimeLimiterRegistry.of(tlConfig);
+    }
+```
+
+### 클라이언트 별 설정
+
 # 참고
 
 https://search.maven.org/artifact/org.springframework.cloud/spring-cloud-starter-circuitbreaker-resilience4j/2.1.3/jar
