@@ -79,19 +79,19 @@ https://resilience4j.readme.io/docs/circuitbreaker
 ### 3.2 Configuration class 설정
 
 ```java
-    @Bean
-    public Customizer<Resilience4JCircuitBreakerFactory> circuitBreakerFactoryCustomizer() {
-        CircuitBreakerConfig cbConfig = CircuitBreakerConfig.custom()
-                                                            .slidingWindowType(CircuitBreakerConfig.SlidingWindowType.COUNT_BASED)
-                                                            .slidingWindowSize(5)
-                                                            .failureRateThreshold(20.0f)
-                                                            .waitDurationInOpenState(Duration.ofSeconds(5))
-                                                            .permittedNumberOfCallsInHalfOpenState(5)
-                                                            .build();
+@Bean
+public Customizer<Resilience4JCircuitBreakerFactory> circuitBreakerFactoryCustomizer() {
+    CircuitBreakerConfig cbConfig = CircuitBreakerConfig.custom()
+                                                        .slidingWindowType(CircuitBreakerConfig.SlidingWindowType.COUNT_BASED)
+                                                        .slidingWindowSize(5)
+                                                        .failureRateThreshold(20.0f)
+                                                        .waitDurationInOpenState(Duration.ofSeconds(5))
+                                                        .permittedNumberOfCallsInHalfOpenState(5)
+                                                        .build();
 
-        // See FeignAutoConfiguration.DefaultCircuitBreakerNameResolver.resolveCircuitBreakerName() for default resolve id pattern
-        return resilience4JCircuitBreakerFactory -> resilience4JCircuitBreakerFactory.configure(builder -> builder.circuitBreakerConfig(cbConfig), "FooFeignClient#getUser(String,boolean)");
-    }
+    // See FeignAutoConfiguration.DefaultCircuitBreakerNameResolver.resolveCircuitBreakerName() for default resolve id pattern
+    return resilience4JCircuitBreakerFactory -> resilience4JCircuitBreakerFactory.configure(builder -> builder.circuitBreakerConfig(cbConfig), "FooFeignClient#getUser(String,boolean)");
+}
 ```
 
 ## 4. Circuit Breaker Fallback Method 설정
@@ -117,7 +117,7 @@ public interface FooFeignClient {
 
 ## 5. TimeLimiter 설정
 
-https://resilience4j.readme.io/docs/timeout
+<!-- https://resilience4j.readme.io/docs/timeout -->
 
 FeignClient의 타임아웃과 TimeLimiter의 타임아웃 설정은 서로 독립적으로 동작하지만 같은 값으로 설정하는 경우 TimeLimiter에서 먼저 TimeoutException을 발생시킨다.
 
@@ -146,18 +146,41 @@ resilience4j:
 > `d` for days
 
 ```java
-    @Bean
-    public TimeLimiterRegistry globalTimeLimiterRegistry() {
-        TimeLimiterConfig tlConfig = TimeLimiterConfig.custom()
-                                                      .cancelRunningFuture(false)
-                                                      .timeoutDuration(Duration.ofMills)1000)
-                                                      .build();
+@Bean
+public TimeLimiterRegistry globalTimeLimiterRegistry() {
+    TimeLimiterConfig tlConfig = TimeLimiterConfig.custom()
+                                                    .cancelRunningFuture(false)
+                                                    .timeoutDuration(Duration.ofMills(1000))
+                                                    .build();
 
-        return TimeLimiterRegistry.of(tlConfig);
-    }
+    return TimeLimiterRegistry.of(tlConfig);
+}
 ```
 
 ### 클라이언트 별 설정
+
+```yaml
+resilience4j:
+  timelimiter:
+    configs:
+      ...
+      foo:
+        cancelRunningFuture: false
+        timeoutDuration: 3000ms
+```
+
+```java
+@Bean
+public Customizer<Resilience4JCircuitBreakerFactory> circuitBreakerFactoryCustomizer() {
+    TimeLimiterConfig tlConfig = TimeLimiterConfig.custom()
+                                                .cancelRunningFuture(false)
+                                                .timeoutDuration(Duration.ofMillis(3000))
+                                                .build();
+
+    return resilience4JCircuitBreakerFactory -> resilience4JCircuitBreakerFactory.configure(builder ->
+            builder.timeLimiterConfig(tlConfig), "FooFeignClient#getUser(String,boolean)");
+}
+```
 
 # 참고
 
