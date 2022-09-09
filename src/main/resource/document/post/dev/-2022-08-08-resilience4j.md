@@ -157,6 +157,9 @@ public TimeLimiterRegistry globalTimeLimiterRegistry() {
 }
 ```
 
+> 주의점  
+> 글로벌 타임아웃 설정을 하더라도 `Resilience4JCircuitBreakerFactory` 를 통해 설정된 메서드의 경우, 글로벌 타임아웃 설정이 반영되지 않기 때문에 빌더(클라이언트 별 설정)를 통해 타임아웃 설정을 해야한다.
+
 ### 클라이언트 별 설정
 
 ```yaml
@@ -173,9 +176,9 @@ resilience4j:
 @Bean
 public Customizer<Resilience4JCircuitBreakerFactory> circuitBreakerFactoryCustomizer() {
     TimeLimiterConfig tlConfig = TimeLimiterConfig.custom()
-                                                .cancelRunningFuture(false)
-                                                .timeoutDuration(Duration.ofMillis(3000))
-                                                .build();
+                                                  .cancelRunningFuture(false)
+                                                  .timeoutDuration(Duration.ofMillis(3000))
+                                                  .build();
 
     return resilience4JCircuitBreakerFactory -> resilience4JCircuitBreakerFactory.configure(builder ->
             builder.timeLimiterConfig(tlConfig), "FooFeignClient#getUser(String,boolean)");
