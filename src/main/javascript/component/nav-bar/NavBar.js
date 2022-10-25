@@ -96,6 +96,28 @@ function NavBar(props) {
           <Link
             to={{
               pathname: `/posts`,
+              search: `?menu=tldr`,
+            }}
+            style={{
+              gridRow: "2",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "0rem 0.25rem",
+              textDecoration: "none",
+              textAlign: "center",
+              verticalAlign: "middle",
+              fontWeight: "bold",
+              // eslint-disable-next-line
+              color: currentMenu == "tldr" ? "#f6eb61" : "#a4dbe8",
+              fontSize: "16px",
+            }}
+          >
+            TL;DR
+          </Link>
+          <Link
+            to={{
+              pathname: `/posts`,
               search: `?menu=archive`,
             }}
             style={{
