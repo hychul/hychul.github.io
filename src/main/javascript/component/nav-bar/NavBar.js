@@ -73,7 +73,7 @@ function NavBar(props) {
           <Link
             to={{
               pathname: `/posts`,
-              search: `?menu=dev`,
+              search: `?menu=archive`,
             }}
             style={{
               gridRow: "2",
@@ -81,17 +81,16 @@ function NavBar(props) {
               justifyContent: "center",
               alignItems: "center",
               margin: "0rem 0.25rem",
-              height: "3rem",
               textDecoration: "none",
               textAlign: "center",
               verticalAlign: "middle",
               fontWeight: "bold",
               // eslint-disable-next-line
-              color: currentMenu == "dev" ? "#f6eb61" : "#a4dbe8",
+              color: currentMenu == "archive" ? "#f6eb61" : "#a4dbe8",
               fontSize: "16px",
             }}
           >
-            DEV
+            ARCHIVE
           </Link>
           <Link
             to={{
@@ -114,28 +113,6 @@ function NavBar(props) {
             }}
           >
             TL;DR
-          </Link>
-          <Link
-            to={{
-              pathname: `/posts`,
-              search: `?menu=archive`,
-            }}
-            style={{
-              gridRow: "2",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              margin: "0rem 0.25rem",
-              textDecoration: "none",
-              textAlign: "center",
-              verticalAlign: "middle",
-              fontWeight: "bold",
-              // eslint-disable-next-line
-              color: currentMenu == "archive" ? "#f6eb61" : "#a4dbe8",
-              fontSize: "16px",
-            }}
-          >
-            ARCHIVE
           </Link>
           <Link
             to={{

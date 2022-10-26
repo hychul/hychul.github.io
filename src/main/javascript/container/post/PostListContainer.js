@@ -7,7 +7,7 @@ import { UPDATE_MENU } from "main/javascript/redux/action";
 function PostListContainer(props) {
   props.loadPosts();
 
-  const menu = props.menu ?? "dev";
+  const menu = props.menu ?? "archive";
   const tag = props.tag ?? "all";
   const page = props.page ?? 1;
 
@@ -21,9 +21,6 @@ function PostListContainer(props) {
     } else {
       setPostList(props.state.postMap?.get("menu")?.get(menu) ?? []);
       switch (menu) {
-        case "dev":
-          props.setMenuDev();
-          break;
         case "tldr":
           props.setMenuTldr();
           break;
@@ -45,7 +42,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   loadPosts: () => dispatch(loadPosts()),
-  setMenuDev: () => dispatch({ type: UPDATE_MENU, menu: "dev" }),
   setMenuTldr: () => dispatch({ type: UPDATE_MENU, menu: "tldr" }),
   setMenuArchive: () => dispatch({ type: UPDATE_MENU, menu: "archive" }),
   setMenuTags: () => dispatch({ type: UPDATE_MENU, menu: "tag" }),
