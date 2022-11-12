@@ -21,3 +21,9 @@ VSCode의 extension들은 '.vxis' 확장자 파일을 통해 제공하기 때문
 다운로드 후 VSCode의 extension 탭에서 vxis를 통한 설치를 하면 문제는 해결되게 된다.
 
 <img width="500" alt="2022-11-10-fix-mac-c#-omnisharp-1" src="https://user-images.githubusercontent.com/18159012/200888032-cde849a6-d21a-483e-a693-8667d5b09457.png">
+
+> Omnisharp v1.25.1에서 발생한 해당 문제는 v1.25.2에서 해결되었다.
+>
+> 그럼에도 추후 업데이트에서 호환성 잇가 발생할 수 있으므로, VSCode의 Setting에서 `Update:` 항목의 옵션을 `auto-update`에서 `start`로 변경하였다.
+>
+> VSCode auto-update 관련 레퍼런스 : https://code.visualstudio.com/docs/supporting/FAQ#_how-do-i-opt-out-of-vs-code-autoupdates
