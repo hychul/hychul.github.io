@@ -1,4 +1,5 @@
 // categories :: {postId = 'date'-'title'} :: {title} :: {tags|optional}
+archive :: 2022-12-02-spring-boot-3.0-gradle-issue :: 스프링 부트 3.0 Gradle issue :: spring, java
 archive :: 2022-10-06-mac-external-monitor-hidpi :: 맥에서 지원하지 않는 모니터에 HiDPI 사용하기 :: mac
 archive :: 2022-09-25-vi-editor-search-and-replace :: vi 키워드 찾기 및 바꾸기 :: vi
 archive :: 2022-08-30-mat-execution-error-on-mac :: Eclipes MAT 맥에서 실행 에러 :: mac
