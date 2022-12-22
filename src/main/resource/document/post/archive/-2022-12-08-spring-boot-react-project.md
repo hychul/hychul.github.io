@@ -17,3 +17,7 @@ https://sauravomar01.medium.com/achieve-600k-concurrent-websocket-connections-f8
 # webflux web socket handshake custom
 
 https://stackoverflow.com/questions/52370271/how-to-customize-websocket-handshake-and-or-add-a-filter
+
+# linux used port kill process
+
+https://pinokio0702.tistory.com/277
