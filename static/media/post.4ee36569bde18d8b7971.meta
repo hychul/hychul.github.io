@@ -1,5 +1,5 @@
 // categories :: {postId = 'date'-'title'} :: {title} :: {tags|optional}
-archive :: 2022-12-02-spring-boot-3.0-gradle-issue :: 스프링 부트 3.0 Gradle issue :: spring, java
+archive :: 2022-12-02-spring-boot-3.0-gradle-issue :: 스프링 부트 3.0 Gradle issue :: spring, java, trouble-shoot
 archive :: 2022-10-06-mac-external-monitor-hidpi :: 맥에서 지원하지 않는 모니터에 HiDPI 사용하기 :: mac
 archive :: 2022-09-25-vi-editor-search-and-replace :: vi 키워드 찾기 및 바꾸기 :: vi
 archive :: 2022-08-30-mat-execution-error-on-mac :: Eclipes MAT 맥에서 실행 에러 :: mac
@@ -9,7 +9,7 @@ archive :: 2022-03-31-spring-cloud-config-runtime-update :: Spring Cloud Config 
 archive :: 2022-01-29-unity-urp-transparency-sort-mode :: Unity의 URP에서 Transparency Sort Mode 변경하기 :: unity, c#
 archive :: 2022-01-23-mac-off-clamshell :: macOS에서 클램쉘 모드 끄기 :: mac, tip
 archive :: 2022-01-17-mac-shift-space-language-transition :: macOS에 shift + space로 한영키 사용하기 :: mac, keyboard, tip
-archive :: 2022-01-14-kotlin-kapt-execution-failed :: Kotlin 빌드시 Kapt 에러 이슈 :: kotlin, jdk, issue
+archive :: 2022-01-14-kotlin-kapt-execution-failed :: Kotlin 빌드시 Kapt 에러 이슈 :: kotlin, jdk, trouble-shoot
 archive :: 2022-01-14-mac-brew-install-jdk :: macOS 에 brew로 open JDK 설치 :: mac, jdk, brew, terminal, tip
 archive :: 2022-01-14-developers-growth :: 개발자로서의 성장 :: 
 archive :: 2021-12-22-spark-join-duplicated-colum :: Spark 조인 시 중복 컬럼 처리하기 :: spark, scala
@@ -20,19 +20,19 @@ archive :: 2021-12-08-git-branch-on-prompt :: 터미널에서 Git 브랜치 표�
 archive :: 2021-11-30-karabiner-mac-language-transition :: Karabiner에서 Mac의 right command를 한영키로 사용하기 :: mac, keyboard, karabiner
 archive :: 2021-08-27-mac-generate-git-rsa-key-pair :: Mac에서 Github SSH로 연결하기 :: mac, git, ssh, rsa, tip
 archive :: 2021-08-20-unity-dont-use-null-equals :: 유니티 null 체크 :: unity, c#, game
-archive :: 2021-06-23-webflux-client-load-balancer-connection-refused :: Webflux 클라이언트 로드 밸런서에서 Connection Refused 이슈 :: java, spring, webflux, issue
+archive :: 2021-06-23-webflux-client-load-balancer-connection-refused :: Webflux 클라이언트 로드 밸런서에서 Connection Refused 이슈 :: java, spring, webflux, trouble-shoot
 archive :: 2021-06-22-mysql-function :: MySQL의 내장 함수 :: db, mysql
 archive :: 2021-06-18-karabiner-shift-esc-as-tilde :: Karabiner에서 Shift + ESC 를 ~ 로 동작하도록 설정하기 :: mac, keyboard, karabiner
 archive :: 2021-06-06-webflux-security-disable-login-form :: Webflux에서 브라우저 로그인 폼 비활성화 하기 :: java, spring, spring-security, webflux
 archive :: 2021-06-03-webclient-flux-string-empty :: WebClient애서 empty String flux 처리하기 :: java, spring, webflux, webclient
 archive :: 2021-06-03-mac-terminal-auto-complete :: Mac 터미널에서 자동완성 사용하기 :: mac, tip
-archive :: 2021-05-11-transfer-encoding-chunk-incompleted :: transfer-encoding chunk incompleted 이슈 :: java, spring, webflux, spring-cloud-gateway, scg, issue
+archive :: 2021-05-11-transfer-encoding-chunk-incompleted :: transfer-encoding chunk incompleted 이슈 :: java, spring, webflux, spring-cloud-gateway, scg, trouble-shoot
 archive :: 2021-05-06-context-path-webflux :: Context Path 설정 :: java, tomcat, spring, spring-mvc, spring-webflux
-archive :: 2021-05-04-compiler-message-file-broken :: compiler message file broken 이슈 :: java, issue
+archive :: 2021-05-04-compiler-message-file-broken :: compiler message file broken 이슈 :: java, trouble-shoot
 archive :: 2021-05-01-spring-cloug-gateway-route :: Spring Cloud Gateway 라우팅 :: java, spring, spring-cloud-gateway, scg
 archive :: 2021-04-27-n-plus-one-problem :: N+1 문제 :: java, jpa, db
-archive :: 2021-04-21-webclient-route-load-balancer-sertting :: WebClient에서 LoadBalacner 클라이언트 사용하기 :: java, spring-webflux, webclient, issue
-archive :: 2021-04-21-web-client-override-base-url-issue :: WebClient base url 오버라이딩 이슈 :: java, spring-webflux, webclient, issue
+archive :: 2021-04-21-webclient-route-load-balancer-sertting :: WebClient에서 LoadBalacner 클라이언트 사용하기 :: java, spring-webflux, webclient, trouble-shoot
+archive :: 2021-04-21-web-client-override-base-url-issue :: WebClient base url 오버라이딩 이슈 :: java, spring-webflux, webclient, trouble-shoot
 archive :: 2021-03-11-react-overflow-child-content :: React child 컴포넌트의 이미지가 parent 크기보다 클 때 :: react
 // archive :: 2021-03-11-spring-security-pre-auth :: Spring MVC와 Weflux의 Security : PreAuthentication :: java, spring
 archive :: 2020-09-01-alias-setting-for-mac :: Mac에서 alias 설정 :: mac, tip
@@ -40,14 +40,14 @@ archive :: 2020-08-26-unity-vs-code-integration-for-mac :: Unity VSCode 연동 f
 archive :: 2020-04-17-how-mybatis-works :: MyBatis는 어떻게 동작할까? :: java, mybatis, db, jdbc
 archive :: 2020-04-17-how-jpa-works :: JPA는 어떻게 동작할까? :: java, jpa, db, jdbc
 archive :: 2020-04-17-how-lombok-works :: 롬복이 어떻게 동작할까? :: java, lombok
-archive :: 2020-03-29-git-submodule-conflict :: Git submodule conflict 이슈 :: git, terminal, issue
+archive :: 2020-03-29-git-submodule-conflict :: Git submodule conflict 이슈 :: git, terminal, trouble-shoot
 archive :: 2019-08-01-swagger-api-document-file :: Swagger 도큐먼트 파일로 저장하기 :: java, swagger
 archive :: 2019-07-19-markdown-syntax :: 마크다운 문법 :: markdown
 archive :: 2019-07-04-intellij-file-type-strange :: IntelliJ에서 파일 형식에 맞지 않게 인식할 때 :: intellij
 archive :: 2019-07-02-git-description :: Git description 편리하게 사용하기 :: git
 archive :: 2019-05-24-using-kotlin-in-android :: Using Kotlin in Android :: kotlin, android
 archive :: 2019-05-24-jenkins-scheduling-format :: Jenkins Scheduling Format :: jenkins
-archive :: 2019-05-24-hibernate-JAXBContext-exception :: Hibernate Unable to build hbm.xml JAXBContext Exception 이슈 :: issue
+archive :: 2019-05-24-hibernate-JAXBContext-exception :: Hibernate Unable to build hbm.xml JAXBContext Exception 이슈 :: trouble-shoot
 archive :: 2019-05-24-applying-audit-to-jpa :: JPA에 audit 적용하기 :: java, spring, jpa
 archive :: 2019-05-22-set-key-after-insert-by-mybatis :: Mybatis에서 INSERT 후 key 가져오기 :: java, spring, mybatis
 archive :: 2019-05-16-mybatis-resulttype-list :: java, spring, mybatis
