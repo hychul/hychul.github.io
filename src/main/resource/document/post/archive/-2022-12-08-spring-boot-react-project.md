@@ -21,3 +21,7 @@ https://stackoverflow.com/questions/52370271/how-to-customize-websocket-handshak
 # linux used port kill process
 
 https://pinokio0702.tistory.com/277
+
+# redis trouble shooting
+
+https://rogal.tistory.com/entry/Embedded-Redis-%EB%A5%BC-%EC%93%B0%EB%A9%B4%EC%84%9C-%EA%B2%AA%EC%9D%80-%EB%AC%B8%EC%A0%9C%EC%99%80-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88
