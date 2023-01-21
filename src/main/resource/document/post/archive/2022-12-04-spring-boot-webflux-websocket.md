@@ -24,4 +24,24 @@ public HandlerMapping webSocketHandlerMapping() {
 
 # Read Message
 
+url을 설정한 다음 웹소켓 핸들러를 구현하여 클라이언트의 메세지를 읽도록 해야한다.
+
+```java
+@Component
+public class MyWebSocketHandler implements WebSocketHandler {
+
+    @Override
+    public Mono<Void> handle(WebSocketSession session) {
+        // Session Conncected
+
+        session.receive()
+               .subscribe(message => {
+                    // TODO: process message here
+	           });
+
+	    return Mono.empty();
+    }
+}
+```
+
 # Send Message
