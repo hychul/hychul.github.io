@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.48392de3.css",
-    "main.js": "/static/js/main.8cdcc732.js",
+    "main.js": "/static/js/main.f7e95ee6.js",
     "static/js/787.02de122f.chunk.js": "/static/js/787.02de122f.chunk.js",
     "static/media/docs.md": "/static/media/docs.d73d3e7cf28c56cda458.md",
     "static/media/2019-01-11-reactive-stream.md": "/static/media/2019-01-11-reactive-stream.11b48ae68e6829c17ff2.md",
@@ -17,7 +17,7 @@
     "static/media/2018-04-03-tobis-spring-3.1-vol1-chapter2.md": "/static/media/2018-04-03-tobis-spring-3.1-vol1-chapter2.e427c9d6b431b7b96361.md",
     "static/media/2019-01-18-junit5.md": "/static/media/2019-01-18-junit5.ead4b969b006536a3371.md",
     "static/media/08-aggregate-transaction-management.md": "/static/media/08-aggregate-transaction-management.7bde0d01e088d8c74bbd.md",
-    "static/media/post.meta": "/static/media/post.7d98754746f9b657fe4e.meta",
+    "static/media/post.meta": "/static/media/post.880a6b0a06d2f1fe6062.meta",
     "static/media/2015-10-28-android-multi-touch.md": "/static/media/2015-10-28-android-multi-touch.c8b594b934e6d71e8a66.md",
     "static/media/2018-06-14-java-lambda.md": "/static/media/2018-06-14-java-lambda.756d331a556adeab3358.md",
     "static/media/2018-03-31-tobis-spring-3.1-vol1-chapter1.md": "/static/media/2018-03-31-tobis-spring-3.1-vol1-chapter1.c8218eec33f7260f2288.md",
@@ -200,11 +200,11 @@
     "static/media/05-spring-data-jpa.md": "/static/media/05-spring-data-jpa.31d6cfe0d16ae931b73c.md",
     "static/media/06-application-and-present-layer.md": "/static/media/06-application-and-present-layer.31d6cfe0d16ae931b73c.md",
     "main.48392de3.css.map": "/static/css/main.48392de3.css.map",
-    "main.8cdcc732.js.map": "/static/js/main.8cdcc732.js.map",
+    "main.f7e95ee6.js.map": "/static/js/main.f7e95ee6.js.map",
     "787.02de122f.chunk.js.map": "/static/js/787.02de122f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48392de3.css",
-    "static/js/main.8cdcc732.js"
+    "static/js/main.f7e95ee6.js"
   ]
 }
