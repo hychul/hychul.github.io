@@ -9,7 +9,7 @@ archive :: 2022-08-30-mat-execution-error-on-mac :: Eclipes MAT 맥에서 실행
 archive :: 2022-06-20-do-not-use-mvc-in-unity :: Do not use MVC in Unity :: 
 // archive :: 2022-05-23-teaching-from-others-faults :: 반면교사 :: 
 archive :: 2022-03-31-spring-cloud-config-runtime-update :: Spring Cloud Config 런타임 리프레시 방법 :: spring, java, spring-cloud, spring-cloud-config
-archive :: 2022-01-29-unity-urp-transparency-sort-mode :: Unity의 URP에서 Transparency Sort Mode 변경하기 :: unity, c#
+archive :: 2022-01-29-unity-urp-transparency-sort-mode :: Unity의 URP에서 Transparency Sort Mode 변경하기 :: unity, c-sharp
 archive :: 2022-01-23-mac-off-clamshell :: macOS에서 클램쉘 모드 끄기 :: mac, tip
 archive :: 2022-01-17-mac-shift-space-language-transition :: macOS에 shift + space로 한영키 사용하기 :: mac, keyboard, tip
 archive :: 2022-01-14-kotlin-kapt-execution-failed :: Kotlin 빌드시 Kapt 에러 이슈 :: kotlin, jdk, trouble-shoot
@@ -22,7 +22,7 @@ archive :: 2021-12-09-mac-change-zsh-shell :: macOS 의 기본 쉘을 zsh로 바
 archive :: 2021-12-08-git-branch-on-prompt :: 터미널에서 Git 브랜치 표시하기 :: git, terminal
 archive :: 2021-11-30-karabiner-mac-language-transition :: Karabiner에서 Mac의 right command를 한영키로 사용하기 :: mac, keyboard, karabiner
 archive :: 2021-08-27-mac-generate-git-rsa-key-pair :: Mac에서 Github SSH로 연결하기 :: mac, git, ssh, rsa, tip
-archive :: 2021-08-20-unity-dont-use-null-equals :: 유니티 null 체크 :: unity, c#, game
+archive :: 2021-08-20-unity-dont-use-null-equals :: 유니티 null 체크 :: unity, c-sharp, game
 archive :: 2021-06-23-webflux-client-load-balancer-connection-refused :: Webflux 클라이언트 로드 밸런서에서 Connection Refused 이슈 :: java, spring, webflux, trouble-shoot
 archive :: 2021-06-22-mysql-function :: MySQL의 내장 함수 :: db, mysql
 archive :: 2021-06-18-karabiner-shift-esc-as-tilde :: Karabiner에서 Shift + ESC 를 ~ 로 동작하도록 설정하기 :: mac, keyboard, karabiner
