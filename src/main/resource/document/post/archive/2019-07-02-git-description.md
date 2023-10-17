@@ -6,6 +6,8 @@ Git을 사용할때 프로젝트의 기능, 스펙 등에 따라 브랜치를 �
 
 한가지 아쉬운 점은 `git branch` 명령어에서 어떠한 옵션으로도 브랜치 명과 설명을 동시에 보여주지 않는다는 것입니다. 때문에 간단히 alias에 함수를 추가해서 브랜치 명과 설명을 동시에 보여줄 수 있는 간단한 코드를 작성했다.
 
+# Bash Shell
+
 ```shell
 function gitbranch() {
     if [[ $# -eq 0 ]]; then
@@ -63,8 +65,55 @@ function gitbranch() {
                     source $HOME/.bash_profile && gitbranch \"$1\" \"$2\" \"$3\"; \
                 fi; \
               }; f"
-
 ```
+
+# Zshell
+
+```shell
+gitbranch() {
+    if [[ $# -eq 0 ]]; then
+        branchs=$(git branch --list --sort=commiterdate)
+        item=""
+        while read -r item; do
+            branch=${item//\*\ /}
+            description=$(git config branch.$branch.description)
+            if [[ -n $description ]]; then
+                description=": $description"
+            fi
+
+            if [[ "$item" == *"*"* ]]; then
+                printf "* \e[0;32m%-15s %s\e[m\n" "$branch" "$description"
+            else
+                printf "  %-15s %s\n" "$branch" "$description"
+            fi
+        done <<< "$branches"
+    elif [[ $# -eq 1 ]]; then
+        branch=$1
+        git config branch.${branch}.description
+    elif [[ $# -eq 2 ]]; then
+        opt=$1
+        if [[ $opt == "-m" ]]; then
+           branch_name=`git branch | grep \* | cut -d ' ' -f2`
+            desc=$2
+            git config branch.${branch_name}.description "${desc}"
+        fi
+    elif [[ $# -eq 3 ]]; then
+        opt=$1
+        if [[ $opt == "-b" ]]; then
+            branch_name=$2
+            desc=$3
+            git config branch.${branch_name}.description "${desc}"
+        fi
+    fi
+}
+```
+
+```shell
+[alias]
+        br = "!f() { zsh -i -c 'gitbranch \"$@\"' -- \"$@\"; }; f"
+```
+
+# Usage
 
 ```terminal
 $ git br -m "Test 1"
